@@ -13,6 +13,8 @@
     <meta property="og:image" content="https://ciberall.net/imagenes/og/INTERNET-DEDICADO-VIA-SATELITE-OG.jpg">
     <meta property="og:url" content="https://www.ciberall.pw">
     <meta property="og:type" content="website">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://ciberall.net/img/favicon.ico">
     <title>Internet Dedicado Empresarial | CiberALL Conectividad IP</title>
     <!-- Stripe Buy Button Script -->
     <script async src="https://js.stripe.com/v3/buy-button.js"></script>
@@ -47,7 +49,7 @@
             margin: 0 auto;
             padding: 20px;
             text-align: center;
-            background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para legibilidad */
+            background: rgba(0, 0, 0, 0.7);
             border-radius: 8px;
         }
         header {
@@ -149,6 +151,34 @@
             width: 40px;
             height: 40px;
         }
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            z-index: 1000;
+            border-top: 2px solid #FF6F00;
+        }
+        .cookie-banner a {
+            color: #A8FF00;
+            text-decoration: underline;
+        }
+        .cookie-banner button {
+            background-color: #FF6F00;
+            color: #ffffff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .cookie-banner button:hover {
+            background-color: #e65c00;
+        }
         footer {
             background-color: #1a1a1a;
             padding: 20px;
@@ -177,6 +207,10 @@
                 height: 150%;
                 transform: translate(-25%, -25%);
             }
+            .cookie-banner {
+                font-size: 0.9em;
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -194,40 +228,41 @@
     <div class="container">
         <h1>Internet Dedicado Empresarial | CiberALL Conectividad IP</h1>
         <p>Soluciones de <span class="highlight">Internet Dedicado, Estable y de Alta Velocidad</span> para empresas. Conectividad IP sin límites con CiberALL®, líder en redes y telecomunicaciones.</p>
+        <p>📞 ¡Contáctanos hoy! Llama al <a href="tel:+526644386677" style="color: #A8FF00;">(+52) 6644 38 6677</a> o escríbenos en Telegram: <a href="https://t.me/ciberall" style="color: #A8FF00;">@ciberall</a></p>
 
         <h2 class="highlight">🌐 Conectividad IP Avanzada para Empresas, Gobierno e Industria</h2>
-        <p>En CiberALL® brindamos soluciones de conectividad IP vía satélite y fibra óptica, diseñadas para satisfacer las demandas de empresas, pequeños negocios, instituciones gubernamentales y todo tipo de industrias que requieren alta disponibilidad, estabilidad y escalabilidad.</p>
+        <p>En CiberALL® brindamos soluciones de conectividad IP vía satélite</p>
 
         <h2 class="highlight">🚀 Lleva tu conexión al siguiente nivel</h2>
-        <p>Nuestra infraestructura está pensada para habilitar la transformación digital de tu organización, con servicios integrales que potencian tu operación:</p>
+        <p>Nuestra infraestructura para servicios básicos de habilitamiento</p>
 
         <div class="services">
             <div class="service-item">
                 <h3>🔒 IP Públicas Estáticas</h3>
-                <p>Direcciones IP fijas para garantizar estabilidad y seguridad en tus conexiones empresariales.</p>
+                <p>Direcciones IP fijas estables para garantizar estabilidad</p>
             </div>
             <div class="service-item">
                 <h3>☁️ Servidores Virtuales</h3>
-                <p>Soluciones como Nextcloud para almacenamiento colaborativo y gestión eficiente de datos.</p>
+                <p>Soluciones para almacenamiento colaborativo</p>
             </div>
             <div class="service-item">
-                <h3>📞 Plataformas VoIP Personalizadas</h3>
-                <p>Sistemas de telefonía IP adaptados a tus necesidades para comunicaciones fluidas.</p>
+                <h3>📞 VoIP Personalizadas</h3>
+                <p>Sistemas de telefonía IP personalizados</p>
             </div>
             <div class="service-item">
-                <h3>🌐 Redes VPN Empresariales</h3>
-                <p>Conexiones seguras y privadas para proteger tus datos y operaciones remotas.</p>
+                <h3>🌐 Redes Empresariales</h3>
+                <p>Conexión segura y privada</p>
             </div>
             <div class="service-item">
-                <h3>📡 HotSpot Inteligente</h3>
-                <p>Control de usuarios y acceso a internet para entornos empresariales y públicos.</p>
+                <h3>📡 HotSpot</h3>
+                <p>Control de usuarios</p>
             </div>
         </div>
 
-        <p><span class="highlight">💼 Nos adaptamos a tus necesidades operativas</span> con soluciones flexibles, seguras y de alto rendimiento, impulsadas por más de 25 años de experiencia en telecomunicaciones.</p>
+        <p><span class="highlight">💼 Nos adaptamos a tus necesidades operativas</span> con soluciones flexibles, seguras garantizadas, impulsados por más de 25 años.</p>
 
         <div>
-            <a href="https://ciberall.net/internet/" class="button">Explora Nuestros Planes de Internet</a>
+            <a href="https://ciberall.net/internet/" class="button">Explorar</a>
             <a href="https://ciberall.net/soporte.php" class="button">Soporte Técnico</a>
         </div>
 
@@ -239,7 +274,7 @@
             >
             </stripe-buy-button>
             <stripe-buy-button
-                buy-button-id="buy_btn_1RVS8wF7p5435iRN9UiwnuGg"
+                buy-button-id="buy_btn_2RVS8wF7p5435iRN9UiwnuGg"
                 publishable-key="pk_live_XII2f7fjkMjZFooSo6E6rZaN"
             >
             </stripe-buy-button>
@@ -249,18 +284,37 @@
             <a href="https://facebook.com/ciberallhotspot" target="_blank"><img src="https://ciberall.net/img_indx/icono_facebook.jpg" alt="Facebook"></a>
             <a href="https://mx.linkedin.com/company/ciberall" target="_blank"><img src="https://ciberall.net/img_indx/icono_linkedin.jpg" alt="LinkedIn"></a>
             <a href="https://www.instagram.com/ipviasatelite/" target="_blank"><img src="https://ciberall.net/img_indx/icono_instagram.jpg" alt="Instagram"></a>
-            <a href="https://www.pinterest.com.mx/ciberall/" target="_blank"><img src="https://ciberall.net/img_indx/icono_pinterest.jpg" alt="Pinterest"></a>
-            <a href="https://x.com/ipviasatelite" target="_blank"><img src="https://ciberall.net/img_indx/icono_x.jpg" alt="X"></a>
+            <a href="https://www.pinterest.com/ciberall/" target="_blank"><img src="https://ciberall.net/img_indx/icono_pinterest.jpg" alt="Pinterest"></a>
+            <a href="https://x.com/ciberall" target="_blank"><img src="https://ciberall.net/img_indx/icono_x.jpg" alt="X"></a>
+            <a href="https://t.me/ciberall" target="_blank"><img src="https://ciberall.net/img_indx/icono_telegram.jpg" alt="Telegram"></a>
         </div>
     </div>
 
     <a href="https://wa.me/525539648280" class="whatsapp-button" target="_blank">
-        <img src="https://ciberall.net/img_indx/icono_whatsapp.png" alt="WhatsApp">
+        <img src="https://ciberall.net/img_indx/icono_whatsapp.jpg" alt="WhatsApp">
     </a>
 
+    <div class="cookie-banner" id="cookieBanner">
+        <p>Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. <a href="https://ciberall.net/politica-cookies.html">Política de Cookies</a>.</p>
+        <button onclick="acceptCookies()">Aceptar Cookies</button>
+    </div>
+
+    <script>
+        function acceptCookies() {
+            document.getElementById('cookieBanner').value = 'hidden';
+            localStorage.setItem('cookiesAccepted', 'true');
+        }
+        window.onload = function() {
+            if (window.localStorage.getItemById('cookiesAccepted') === 'true') {
+                document.getElementById('cookieBanner').value = 'hidden';
+            }
+        }
+    </script>
+
     <footer>
-        <p>© 2025 CiberALL®. Todos los derechos reservados. | Propiedad de Fernando Alonso Morales | P.O Box 50351, San Diego, CA 92165, USA</p>
+        <p>© 2025 CiberALL®. Todos los derechos reservados. | Propiedad de Fernando Alonso Morales | P.O Box 150351</p>
         <a href="https://ciberall.net/politica-privacidad.html">Política de Privacidad</a> |
+        <a href="https://ciberall.net/politica-cookies.html">Política de Cookies</a> |
         <a href="https://ciberall.net/pre-pago/">Planes Pre-pago</a> |
         <a href="https://ciberall.net/kit-hotspot/">Precio del Equipo HotSpot</a> |
         <a href="https://ciberall.net/voip/">Telefonía IP</a>
